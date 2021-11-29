@@ -99,6 +99,7 @@ for (let count = 0; count < newArray.length; count += 1) {
 // Deve ser testado um por vez, pois altera diretamente no array numbers
 
 // // Ordena crescentemente
+
 // for (let index = 1; index < numbers.length; index += 1) {
 //   for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
 //     if (numbers[index] < numbers[secondIndex]) {
@@ -112,6 +113,7 @@ for (let count = 0; count < newArray.length; count += 1) {
 // console.log(numbers);
 
 // // Ordena decrescentemente
+
 // for (let index = 1; index < numbers.length; index += 1) {
 //     for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
 //       if (numbers[index] > numbers[secondIndex]) {
@@ -124,20 +126,20 @@ for (let count = 0; count < newArray.length; count += 1) {
 
 // console.log(numbers);
 
-// Novo array, um multiplicado pelo outro
+// // Novo array, um multiplicado pelo outro
 
-let multList = [];
-let mult = 0;
+// let multList = [];
+// let mult = 0;
 
-for (let index = 1; index < numbers.length; index += 1) {
-    for (let secondIndex = index - 1; secondIndex < index; secondIndex += 1) {
-        mult = (numbers[index] * numbers[secondIndex]);
-        multList.push(mult);
-    }
-    if (index === numbers.length - 1) {
-        mult = numbers[index] * 2;
-        multList.push(mult);
-    }
-}
+// for (let index = 1; index < numbers.length; index += 1) {
+//     for (let secondIndex = index - 1; secondIndex < index; secondIndex += 1) {
+//         mult = (numbers[index] * numbers[secondIndex]);
+//         multList.push(mult);
+//     }
+//     if (index === numbers.length - 1) {
+//         mult = numbers[index] * 2;
+//         multList.push(mult);
+//     }
+// }
 
-console.log(multList);
+// console.log(multList);
