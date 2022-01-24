@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      let body = document.querySelector('body')
+      titulo = document.createElement('h1')
+      titulo.innerText = 'Exercicio 5.2 - Javascript DOM'
+      body.appendChild(titulo)
+
+      let main = document.createElement('main')
+      main.className = 'main-content'
+      body.appendChild(main)
+
+      let sectionPrincipal = document.createElement('section')
+      sectionPrincipal.className = 'center-content'
+      main.appendChild(sectionPrincipal)
+
+      let p1 = document.createElement('p')
+      p1.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      sectionPrincipal.appendChild(p1) 
+
+      let sectionLeft = document.createElement('section')
+      sectionLeft.className = 'left-content'
+      main.appendChild(sectionLeft)
+
+      let sectionRight = document.createElement('section')
+      sectionRight.className = 'right-content'
+      main.appendChild(sectionRight)
+
+      let imgPlacer = document.createElement('img')
+      imgPlacer.className = 'small-image'
+      imgPlacer.src = 'https://picsum.photos/200'
+      sectionLeft.appendChild(imgPlacer)
+
+      let listaOrd = document.createElement('ol')
+      sectionRight.appendChild(listaOrd)
+      let listaUmADez = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+      let listaAdcionar = document.querySelector('ol')
+      for (let i = 0; i < listaUmADez.length; i += 1) {
+        let numero = listaUmADez[i]
+        let numerosPraLista = document.createElement('li');
+        numerosPraLista.innerText = numero        
+        listaAdcionar.appendChild(numerosPraLista)
+      }
+
+      function createHtresMain (texto) {
+          b = document.createElement('h3')
+          b.innerText = texto
+          main.appendChild(b)
+      }
+
+      createHtresMain('Titulo 1')
+      createHtresMain('Titulo 2')
+      createHtresMain('Titulo 3')
+
+      titulo.className = 'title'
+
+      hTres = document.querySelectorAll('h3')
+      for (let i = 0; i < hTres.length; i += 1) {
+          hTresAtual = hTres[i]
+          hTresAtual.className = 'description'
+      }
+
+      main.removeChild(sectionLeft)
+
+      sectionRight.style.marginRight = 'auto'
+
+      sectionPrincipal.style.backgroundColor = 'green'
+
+      let listOfNumber = document.querySelectorAll('li')
+
+      for (let i = 0; i < listOfNumber.length; i += 1) {
+          let numero = listOfNumber[i]
+          if (i === listOfNumber.length - 1 || i === listOfNumber.length - 2) {
+              listaAdcionar.removeChild(numero)
+          }
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+
+table {
+    margin-left: 42%;
+}
+
+header, nav, footer {
+    width: 78%;
+}
+
+article {
+    display: inline-block;
+    width: 70%;
+}
+
+aside {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+.pictures {
+    width: 300px;
+}
+
+.nav-links {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 20px;
+}

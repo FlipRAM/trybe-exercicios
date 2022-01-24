@@ -1,0 +1,146 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 10px;
+    font-size: x-large;
+  }
+
+  #navigation {
+      margin: 0;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+  }
+
+  #title {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  #aside-container {
+      display: flex;
+      flex-flow: column nowrap;
+  }
+
+  .aside-one {
+      order: 2;
+  }
+
+  .aside-two {
+      order: 1;
+  }
+
+  footer {
+      font-size: medium;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  body {
+    margin: 10px;
+  }
+  
+  #navigation {
+    margin: 0;
+    font-size: larger;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  }
+  
+  #title {
+    text-align: center;
+    font-size: xx-large;
+  }
+   
+  #aside-container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 20px 0 0;
+  }
+    
+  .aside-one {
+    order: 2;
+  }
+    
+  .aside-two {
+    order: 1;
+  }
+
+  div .content-container {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+  }
+
+  article {
+      flex-basis: 650px;
+      font-size: larger;
+  }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 10px;
+    }
+
+    aside {
+        font-size: larger;
+    }
+      
+      #navigation {
+        margin: 0;
+        font-size: larger;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+      }
+      
+      #title {
+        text-align: center;
+        font-size: xx-large;
+      }
+       
+      #aside-container {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0 20px 0 0;
+      }
+        
+      .aside-one {
+        order: 2;
+      }
+        
+      .aside-two {
+        order: 1;
+      }
+    
+      div .content-container {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-around;
+      }
+    
+      article {
+          flex-basis: 1000px;
+          font-size: larger;
+      }
+        
+      footer {
+          font-size: large;
+      }
+    }
