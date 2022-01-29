@@ -33,4 +33,4 @@ const filterPeople = (array) => array.filter(
   && bornIn > 1900 && bornIn <= 2000,
   );
 
-// console.log(filterPeople(people));
+console.log(filterPeople(people));
