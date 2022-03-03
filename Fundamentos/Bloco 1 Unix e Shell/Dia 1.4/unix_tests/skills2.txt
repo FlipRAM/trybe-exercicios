@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Empatia
+Javascript
+HTML
+CSS
+Python
